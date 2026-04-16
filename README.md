@@ -66,18 +66,13 @@ El sistema está desarrollado en **C#** utilizando Programación Orientada a Obj
 ---
 
 ## 5. Flujo del proceso
-Crear Orden → BORRADOR
-      ↓
-Agregar productos (descuenta stock)
-      ↓
-Enviar → ENVIADA
-      ↓
-   ┌───────────────┐
-   ↓               ↓
-Aprobar         Rechazar
-(APROBADA)     (RECHAZADA + restitución stock)
 
-
+1. Crear Orden → **BORRADOR**
+2. Agregar productos (descuenta stock)
+3. Enviar → **ENVIADA**
+4. Resultado:
+   - Aprobar → **APROBADA**
+   - Rechazar → **RECHAZADA** (restituye stock)
 ---
 
 ## 6. Código y comentarios
