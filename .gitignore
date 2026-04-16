@@ -1,0 +1,40 @@
+# Carpeta de Visual Studio
+.vs/
+
+# Compilación
+bin/
+obj/
+
+# Archivos de usuario
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Archivos temporales
+*.log
+*.tmp
+*.cache
+
+# Rider / VS Code (opcional)
+.idea/
+.vscode/
+
+# Publicaciones
+publish/
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Paquetes
+*.nupkg
+packages/
+
+# Archivos generados
+*.dll
+*.exe
+*.pdb
+
+# Config local sensible
+appsettings.Development.json

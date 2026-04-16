@@ -1,6 +1,6 @@
 ﻿// ============================================================
 // NovaTech Supply S.A. — Sistema de Órdenes de Compra
-// Archivo: PurchaseOrders.cs  |  Versión: 1.3.0
+// Archivo: PurchaseOrders.cs  |  Versión: 1.4.0
 // ============================================================
 
 using System;
@@ -45,6 +45,7 @@ namespace NovaTech.Supply
         {
             // BUG 1 ──► No valida que cantidad sea mayor que cero.
             //           Permite cantidad = 0 o negativa sin lanzar excepción.
+            if (cantidad <= 0) throw new ArgumentException("Solo se permite agregar un producto con una cantidad mayor a 0.");
             Producto = producto;
             Cantidad = cantidad;
         }
@@ -76,11 +77,12 @@ namespace NovaTech.Supply
 
         public OrdenCompra(string proveedor, string solicitante)
         {
-            _ultimoId = _ultimoId;          // BUG 2 ──► Asigna la variable a sí misma.
+            _ultimoId = ++_ultimoId;          // BUG 2 ──► Asigna la variable a sí misma.
             Id = _ultimoId;      //           Nunca incrementa; todos los
             Proveedor = proveedor;       //           objetos obtienen Id = 0.
             Solicitante = solicitante;
             Estado = "BORRADOR";
+
             FechaCreacion = DateTime.Now;
         }
 
@@ -101,7 +103,7 @@ namespace NovaTech.Supply
         {
             decimal total = 0m;
             foreach (var linea in _lineas)
-                total = linea.CalcularSubtotal();  // BUG 3 ──► Asignación en vez de +=.
+                total += linea.CalcularSubtotal();  // BUG 3 ──► Asignación en vez de +=.
             return total;                           //           Solo retorna el subtotal
         }                                           //           de la ÚLTIMA línea.
 
@@ -129,6 +131,21 @@ namespace NovaTech.Supply
                 throw new InvalidOperationException(
                     "Solo se pueden aprobar órdenes en estado ENVIADA.");
             Estado = "APROBADA";
+        }
+
+        public void Rechazar(string motivo)
+        {
+            if (Estado != "ENVIADA")
+                throw new InvalidOperationException(
+                    "Solo se pueden rechazar órdenes en estado ENVIADA.");
+            if (string.IsNullOrWhiteSpace(motivo))
+                throw new ArgumentException("El motivo no puede estar vacío.");
+
+            foreach (var linea in _lineas)
+                linea.Producto.StockDisponible += linea.Cantidad;
+
+            Estado = "RECHAZADA";
+            Notas = motivo;
         }
 
         public override string ToString()
@@ -159,6 +176,7 @@ namespace NovaTech.Supply
         public Producto? ObtenerProducto(string codigo)
             => _productos.TryGetValue(codigo, out var p) ? p : null;
 
+
         // ── Gestión de órdenes ────────────────────────────────
         public OrdenCompra CrearOrden(string proveedor, string solicitante)
         {
@@ -172,10 +190,17 @@ namespace NovaTech.Supply
         /// BUG 4 ──► Retorna null en silencio; el caller puede no saberlo.
         /// </summary>
         public OrdenCompra? ObtenerOrden(int idOrden)
-            => _ordenes.TryGetValue(idOrden, out var o) ? o : null;
+        {
+            if (!_ordenes.TryGetValue(idOrden, out var orden))
+                throw new ArgumentException("El id indicado no existe.", nameof(idOrden));
+
+            return orden;
+        }
 
         public IEnumerable<OrdenCompra> ListarOrdenes()
             => _ordenes.Values;
+
+
 
         // ── Reportes ──────────────────────────────────────────
         /// <summary>Suma los totales de todas las OC en estado APROBADA.</summary>
@@ -185,7 +210,7 @@ namespace NovaTech.Supply
             foreach (var orden in _ordenes.Values)
             {
                 if (orden.Estado == "APROBADA")
-                    total = +orden.CalcularTotal();  // BUG 5 ──► =+ en vez de +=.
+                    total += orden.CalcularTotal();  // BUG 5 ──► =+ en vez de +=.
             }                                        //           Sobreescribe total
             return total;                            //           en cada iteración.
         }
