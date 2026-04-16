@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NovaTech")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+89f9d89d4145b7556677bb1aee44011543bd4f0b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+93eca4b842fcc26f9911e3402cfaac9674718eb3")]
 [assembly: System.Reflection.AssemblyProductAttribute("NovaTech")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NovaTech")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
