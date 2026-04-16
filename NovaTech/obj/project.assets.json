@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\velas\\source\\repos\\NovaTech\\NovaTech\\NovaTech.csproj",
+      "projectUniqueName": "C:\\Users\\velas\\OneDrive\\Escritorio\\NovaTech\\NovaTech\\NovaTech\\NovaTech.csproj",
       "projectName": "NovaTech",
-      "projectPath": "C:\\Users\\velas\\source\\repos\\NovaTech\\NovaTech\\NovaTech.csproj",
+      "projectPath": "C:\\Users\\velas\\OneDrive\\Escritorio\\NovaTech\\NovaTech\\NovaTech\\NovaTech.csproj",
       "packagesPath": "C:\\Users\\velas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\velas\\source\\repos\\NovaTech\\NovaTech\\obj\\",
+      "outputPath": "C:\\Users\\velas\\OneDrive\\Escritorio\\NovaTech\\NovaTech\\NovaTech\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\velas\\AppData\\Roaming\\NuGet\\NuGet.Config",

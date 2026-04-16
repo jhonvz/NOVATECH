@@ -1,0 +1,15 @@
+C:\Users\velas\OneDrive\Escritorio\NovaTech\NovaTech\NovaTech\bin\Debug\net10.0\NovaTech.exe
+C:\Users\velas\OneDrive\Escritorio\NovaTech\NovaTech\NovaTech\bin\Debug\net10.0\NovaTech.deps.json
+C:\Users\velas\OneDrive\Escritorio\NovaTech\NovaTech\NovaTech\bin\Debug\net10.0\NovaTech.runtimeconfig.json
+C:\Users\velas\OneDrive\Escritorio\NovaTech\NovaTech\NovaTech\bin\Debug\net10.0\NovaTech.dll
+C:\Users\velas\OneDrive\Escritorio\NovaTech\NovaTech\NovaTech\bin\Debug\net10.0\NovaTech.pdb
+C:\Users\velas\OneDrive\Escritorio\NovaTech\NovaTech\NovaTech\obj\Debug\net10.0\NovaTech.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\velas\OneDrive\Escritorio\NovaTech\NovaTech\NovaTech\obj\Debug\net10.0\NovaTech.AssemblyInfoInputs.cache
+C:\Users\velas\OneDrive\Escritorio\NovaTech\NovaTech\NovaTech\obj\Debug\net10.0\NovaTech.AssemblyInfo.cs
+C:\Users\velas\OneDrive\Escritorio\NovaTech\NovaTech\NovaTech\obj\Debug\net10.0\NovaTech.csproj.CoreCompileInputs.cache
+C:\Users\velas\OneDrive\Escritorio\NovaTech\NovaTech\NovaTech\obj\Debug\net10.0\NovaTech.sourcelink.json
+C:\Users\velas\OneDrive\Escritorio\NovaTech\NovaTech\NovaTech\obj\Debug\net10.0\NovaTech.dll
+C:\Users\velas\OneDrive\Escritorio\NovaTech\NovaTech\NovaTech\obj\Debug\net10.0\refint\NovaTech.dll
+C:\Users\velas\OneDrive\Escritorio\NovaTech\NovaTech\NovaTech\obj\Debug\net10.0\NovaTech.pdb
+C:\Users\velas\OneDrive\Escritorio\NovaTech\NovaTech\NovaTech\obj\Debug\net10.0\NovaTech.genruntimeconfig.cache
+C:\Users\velas\OneDrive\Escritorio\NovaTech\NovaTech\NovaTech\obj\Debug\net10.0\ref\NovaTech.dll

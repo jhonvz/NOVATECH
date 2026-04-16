@@ -1,10 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\velas\\source\\repos\\NovaTech\\",
+  "WorkspaceRootPath": "C:\\Users\\velas\\OneDrive\\Escritorio\\NovaTech\\NovaTech\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{160D2828-747F-4245-B1FC-9CE278E2CA1C}|NovaTech\\NovaTech.csproj|c:\\users\\velas\\source\\repos\\novatech\\novatech\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{160D2828-747F-4245-B1FC-9CE278E2CA1C}|NovaTech\\NovaTech.csproj|solutionrelative:novatech\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{913BC8BE-26BC-1503-BA90-44156CD99B50}|NovaTech\\NovaTech.csproj|c:\\users\\velas\\onedrive\\escritorio\\novatech\\novatech\\novatech\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{913BC8BE-26BC-1503-BA90-44156CD99B50}|NovaTech\\NovaTech.csproj|solutionrelative:novatech\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -20,11 +20,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\velas\\source\\repos\\NovaTech\\NovaTech\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\velas\\OneDrive\\Escritorio\\NovaTech\\NovaTech\\NovaTech\\Program.cs",
               "RelativeDocumentMoniker": "NovaTech\\Program.cs",
-              "ToolTip": "C:\\Users\\velas\\source\\repos\\NovaTech\\NovaTech\\Program.cs",
+              "ToolTip": "C:\\Users\\velas\\OneDrive\\Escritorio\\NovaTech\\NovaTech\\NovaTech\\Program.cs",
               "RelativeToolTip": "NovaTech\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAM0AAAAAAAAAAAAYwOgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-16T20:43:02.282Z",
               "EditorCaption": ""
